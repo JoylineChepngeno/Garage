@@ -1,0 +1,198 @@
+<div class="auth-page d-flex justify-content-center align-items-center min-vh-100">
+  <div class="auth-card col-11 col-sm-10 col-md-8 col-lg-6">
+
+    <!-- Banner -->
+    <div class="auth-banner text-center p-4">
+      <div class="auth-icon-circle mx-auto mb-3">
+        <!-- icon here -->
+      </div>
+      <h3 class="text-white">{{ currentStepData.title }}</h3>
+      <p class="text-white">{{ currentStepData.subtitle }}</p>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="step-progress">
+      <div class="step-progress-fill" [style.width.%]="progressPercent"></div>
+    </div>
+
+    <!-- Step Indicators -->
+    <div class="step-indicators d-flex justify-content-center gap-2 pt-3">
+      @for (step of steps; track step.number) {
+        <div 
+          class="step-dot"
+          [class.active]="step.number === currentStep"
+          [class.completed]="step.number < currentStep">
+          {{ step.number }}
+        </div>
+      }
+    </div>
+
+    <!-- STEP 1 -->
+    @if (currentStep === 1) {
+      <div class="p-4">
+        <h6 class="step-section-title mb-3">Basic Information</h6>
+        <div class="row g-3">
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">CAR MAKE</label>
+            <input type="text" class="auth-input form-control" placeholder="e.g. Toyota">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">MODEL</label>
+            <input type="text" class="auth-input form-control" placeholder="e.g. Camry">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">YEAR</label>
+            <input type="number" class="auth-input form-control" placeholder="e.g. 2020">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">CAR COLOR</label>
+            <input type="text" class="auth-input form-control" placeholder="e.g. Pearl White">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">NUMBER OF DOORS</label>
+            <select class="auth-input form-control">
+              <option value="">Select</option>
+              <option>2</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">DRIVE TYPE</label>
+            <select class="auth-input form-control">
+              <option value="">Select drive type</option>
+              <option>FWD</option>
+              <option>RWD</option>
+              <option>AWD</option>
+              <option>4WD</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+    }
+
+    <!-- STEP 2 -->
+    @if (currentStep === 2) {
+      <div class="p-4">
+        <h6 class="step-section-title mb-3">Engine & Transmission</h6>
+        <div class="row g-3">
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">TRANSMISSION TYPE</label>
+            <select class="auth-input form-control">
+              <option value="">Select transmission</option>
+              <option>Automatic</option>
+              <option>Manual</option>
+              <option>CVT</option>
+              <option>Semi-Automatic</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">ENGINE TYPE</label>
+            <select class="auth-input form-control">
+              <option value="">Select engine type</option>
+              <option>Petrol</option>
+              <option>Diesel</option>
+              <option>Hybrid</option>
+              <option>Electric</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">ENGINE CAPACITY (CC)</label>
+            <input type="number" class="auth-input form-control" placeholder="e.g. 2000">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">FUEL TANK CAPACITY (L)</label>
+            <input type="number" class="auth-input form-control" placeholder="e.g. 60">
+          </div>
+
+        </div>
+      </div>
+    }
+
+    <!-- STEP 3 -->
+    @if (currentStep === 3) {
+      <div class="p-4">
+        <h6 class="step-section-title mb-3">Registration & Mileage</h6>
+        <div class="row g-3">
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">REGISTRATION NUMBER</label>
+            <input type="text" class="auth-input form-control" placeholder="e.g. KCA 123A">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">VIN NUMBER</label>
+            <input type="text" class="auth-input form-control" placeholder="17 character VIN">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">CURRENT MILEAGE (KM)</label>
+            <input type="number" class="auth-input form-control" placeholder="e.g. 45000">
+          </div>
+
+        </div>
+      </div>
+    }
+
+    <!-- STEP 4 -->
+    @if (currentStep === 4) {
+      <div class="p-4">
+        <h6 class="step-section-title mb-3">Service & Insurance</h6>
+        <div class="row g-3">
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">LAST SERVICE DATE</label>
+            <input type="date" class="auth-input form-control">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">NEXT SERVICE DATE</label>
+            <input type="date" class="auth-input form-control">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">INSURANCE EXPIRY DATE</label>
+            <input type="date" class="auth-input form-control">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="auth-label">INSURANCE PROVIDER</label>
+            <input type="text" class="auth-input form-control" placeholder="e.g. Jubilee Insurance">
+          </div>
+
+        </div>
+      </div>
+    }
+
+    <!-- Navigation Footer -->
+    <div class="step-footer d-flex justify-content-between align-items-center p-4">
+
+      @if (currentStep > 1) {
+        <button class="btn step-back-btn" (click)="prevStep()">← Back</button>
+      } @else {
+        <div></div>
+      }
+
+      <small class="text-muted">Step {{ currentStep }} of {{ totalSteps }}</small>
+
+      @if (currentStep < totalSteps) {
+        <button class="auth-btn btn px-4" (click)="nextStep()">Next →</button>
+      } @else {
+        <button class="auth-btn btn px-4">Save Car →</button>
+      }
+
+    </div>
+
+  </div>
+</div>

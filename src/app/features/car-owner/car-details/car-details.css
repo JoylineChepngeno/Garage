@@ -1,0 +1,62 @@
+/* Progress bar */
+.step-progress {
+  height: 4px;
+  background: #eee;
+}
+
+.step-progress-fill {
+  height: 100%;
+  background: var(--orange-gradient);
+  transition: width 0.4s ease;
+}
+
+/* Step dots */
+.step-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #eee;
+  color: #aaa;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.step-dot.active {
+  background: var(--orange-main);
+  color: white;
+}
+
+.step-dot.completed {
+  background: var(--orange-light);
+  color: white;
+}
+
+/* Step section title */
+.step-section-title {
+  color: var(--orange-main);
+  font-weight: 700;
+  border-bottom: 2px solid var(--input-bg);
+  padding-bottom: 0.5rem;
+}
+
+/* Footer */
+.step-footer {
+  border-top: 1px solid #eee;
+}
+
+/* Back button */
+.step-back-btn {
+  background: transparent;
+  border: 1.5px solid var(--orange-main);
+  color: var(--orange-main);
+  border-radius: var(--border-radius-btn);
+  padding: 0.6rem 1.2rem;
+}
+
+.step-back-btn:hover {
+  background: var(--input-bg);
+}

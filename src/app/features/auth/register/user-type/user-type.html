@@ -1,0 +1,72 @@
+@if (!hasActiveChild()) {
+<div class="select-page d-flex flex-column justify-content-center align-items-center min-vh-100">
+
+    <!-- Header -->
+    <div class="text-center mb-5">
+        <div class="logo mb-3">
+            <!-- Your app logo here -->
+        </div>
+        
+        <h2>Create an Account</h2>
+        <p>Select the option that best describes you</p>
+    </div>
+    
+
+    <!-- Two Cards -->
+    <div class="row g-4 justify-content-center col-11 col-sm-10 col-md-8 col-lg-6">
+
+        <!-- User Type 1 Card -->
+        <div class="col-12 col-sm-6">
+            <div class="type-card text-center p-4">
+
+                <div class="type-icon-circle mx-auto mb-3">
+                    <!-- icon here -->
+                </div>
+
+                <h5 class="mb-2">CAR OWNER</h5>
+                <p class="type-description mb-4">
+                    Brief description of what this user does
+                </p>
+
+                <button class="btn type-btn w-100" routerLink="car-owner">
+                    Get Started →
+                </button>
+
+            </div>
+        </div>
+
+        <!-- User Type 2 Card -->
+        <div class="col-12 col-sm-6">
+            <div class="type-card text-center p-4">
+
+                <div class="type-icon-circle mx-auto mb-3">
+                    <!-- icon here -->
+                </div>
+
+                <h5 class="mb-2">GARAGE ADMIN</h5>
+                <p class="type-description mb-4">
+                    Brief description of what this user does
+                </p>
+
+                <button class="btn type-btn w-100" routerLink="garage-admin">
+                    Get Started →
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- Bottom redirect -->
+    <div class="text-center mt-4">
+        <p>Already have an account?
+            <a routerLink="login">Sign In</a>
+        </p>
+    </div>
+
+
+</div>
+}
+<router-outlet (activate)="onChildLoaded()" 
+  (deactivate)="onChildRemoved()"></router-outlet>

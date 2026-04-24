@@ -1,0 +1,10 @@
+.type-card {
+  border: 2px solid #eee;
+  border-radius: var(--border-radius-card);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.type-card:hover {
+  border-color: var(--orange-main);
+  transform: translateY(-4px);
+}

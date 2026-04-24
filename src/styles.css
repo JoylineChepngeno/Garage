@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+/* 
+
+ */
+ /* ===== THEME VARIABLES ===== */
+:root {
+  --orange-main: #ff8c00;
+  --orange-light: #ffb347;
+  --orange-gradient: linear-gradient(135deg, #ffb347, #ff8c00);
+  --background: #fdf6f0;
+  --input-bg: #fff8f3;
+  --input-border-focus: #ff8c00;
+  --text-dark: #333;
+  --text-muted: #888;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --border-radius-card: 16px;
+  --border-radius-input: 8px;
+  --border-radius-btn: 8px;
+}
+
+/* ===== REUSABLE ACROSS ALL PAGES ===== */
+
+/* Page wrapper - every auth page uses this */
+.auth-page {
+  background-color: var(--background);
+}
+
+/* Every card across all pages */
+.auth-card {
+  background: #fff;
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+/* Every orange banner across all pages */
+.auth-banner {
+  background: var(--orange-gradient);
+  padding: 2rem;
+}
+
+/* Icon circle in banner */
+.auth-icon-circle {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Every input across all forms */
+.auth-input {
+  background-color: var(--input-bg);
+  border: 1.5px solid #eee;
+  border-radius: var(--border-radius-input);
+  padding: 0.75rem 1rem;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.15);
+}
+
+/* Every primary button across all forms */
+.auth-btn {
+  background: var(--orange-gradient);
+  border: none;
+  border-radius: var(--border-radius-btn);
+  color: white;
+  font-weight: 600;
+  padding: 0.85rem;
+  transition: opacity 0.2s;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+/* Every redirect link */
+.auth-link {
+  color: var(--orange-main);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Form labels */
+.auth-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
