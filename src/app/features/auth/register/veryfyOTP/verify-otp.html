@@ -1,0 +1,49 @@
+<div class="auth-page d-flex justify-content-center align-items-center min-vh-100">
+  <div class="auth-card col-11 col-sm-8 col-md-6 col-lg-4">
+
+    <!-- Banner -->
+    <div class="auth-banner text-center p-4">
+      <div class="auth-icon-circle mx-auto mb-3">
+        <!-- email/envelope icon here -->
+      </div>
+      <h3 class="text-white">Check Your Email</h3>
+      <p class="text-white">We sent a verification code to your email address</p>
+    </div>
+
+    <div class="p-4">
+
+      <!-- Instruction text -->
+      <div class="otp-instruction text-center mb-4">
+        <p class="mb-0">Enter the <strong>6-digit code</strong> sent to</p>
+        <p class="otp-email">joyline&#64;email.com</p>
+      </div>
+
+      <!-- OTP Input boxes -->
+      <div class="otp-boxes d-flex justify-content-center gap-2 mb-4">
+        <input type="text" class="otp-input" maxlength="1">
+      </div>
+
+      <!-- Submit button -->
+      <button class="auth-btn btn w-100 mb-3" (click)="submitOtp()">
+        Verify Email →
+      </button>
+
+      <!-- Resend section -->
+      <div class="text-center">
+        <p class="text-muted mb-1">Didn't receive the code?</p>
+        <button class="btn otp-resend-btn" (click)="resendOtp()">
+          Resend Code
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Back to login -->
+    <div class="text-center pb-3">
+      <p>Wrong email? 
+        <a routerLink="/register" class="auth-link">Go back</a>
+      </p>
+    </div>
+
+  </div>
+</div>
