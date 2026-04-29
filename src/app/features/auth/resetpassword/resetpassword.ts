@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink,  } from "@angular/router";
 
 @Component({
   selector: 'app-resetpassword',
@@ -6,4 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './resetpassword.html',
   styleUrl: './resetpassword.css',
 })
-export class Resetpassword {}
+
+export class Resetpassword {
+   private router = inject(Router);
+
+   onResetPassword(){
+    //API Logic
+     this.router.navigate(['/login']);
+   }
+}
