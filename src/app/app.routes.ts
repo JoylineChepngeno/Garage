@@ -6,15 +6,19 @@ import { UserType } from './features/auth/register/user-type/user-type';
 import { CarOwner } from './features/auth/register/car-owner/car-owner';
 import { GarageAdmin } from './features/auth/register/garage-admin/garage-admin';
 import { CarDetails } from './features/car-owner/car-details/car-details';
+import { LandingPage } from './features/landingpage/landing-page';
 
 export const routes: Routes = [
+    {
+        path: '',
+        component: LandingPage},
     {path: 'login',
         component: Login
     },
     {path: 'reset',
         component:Resetpassword
     },
-    {path: 'forgot',
+    {path: 'forgotpassword',
         component:Forgotpassword
     },
     // {
