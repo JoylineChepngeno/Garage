@@ -1,0 +1,46 @@
+.otp-instruction {
+  color: var(--text-dark);
+}
+
+.otp-email {
+  color: var(--orange-main);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+/* Individual OTP boxes */
+.otp-input {
+  width: 48px;
+  height: 56px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: 2px solid #eee;
+  border-radius: var(--border-radius-input);
+  background-color: var(--input-bg);
+  transition: border-color 0.2s;
+  color: var(--text-dark);
+}
+
+.otp-input:focus {
+  outline: none;
+  border-color: var(--orange-main);
+  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.15);
+}
+
+/* Resend button */
+.otp-resend-btn {
+  color: var(--orange-main);
+  font-weight: 600;
+  border: 1.5px solid var(--orange-main);
+  border-radius: var(--border-radius-btn);
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.otp-resend-btn:hover {
+  background: var(--input-bg);
+  color: var(--orange-main);
+}
