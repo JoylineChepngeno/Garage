@@ -1,0 +1,75 @@
+.contact-section {
+  background: #ff8c00;
+}
+
+.contact-pill {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.contact-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.contact-sub {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form {
+  max-width: 560px;
+}
+
+.contact-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.contact-input {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 10px 14px;
+}
+
+.contact-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  color: #fff;
+}
+
+.contact-btn {
+  padding: 11px 32px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  color: #ff8c00;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+  color: #ff8c00;
+}

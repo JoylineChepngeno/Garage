@@ -1,0 +1,25 @@
+.stats-wrapper {
+  background: #fff3e0;
+  border-top: 1px solid #ffe0b2;
+  border-bottom: 1px solid #ffe0b2;
+}
+
+.stat-number {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ff8c00;
+  margin: 0;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #cc6600;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 36px;
+  background: #ffcc80;
+}

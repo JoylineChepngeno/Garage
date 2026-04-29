@@ -1,1 +1,13 @@
-<p>stats works!</p>
+<div class="stats-wrapper d-flex justify-content-center align-items-center flex-wrap gap-4 px-4 py-4">
+
+  @for (stat of stats; track stat.label) {
+    <div class="stat-item text-center">
+      <p class="stat-number">{{ stat.value }}</p>
+      <p class="stat-label">{{ stat.label }}</p>
+    </div>
+    @if (!$last) {
+      <div class="stat-divider"></div>
+    }
+  }
+
+</div>

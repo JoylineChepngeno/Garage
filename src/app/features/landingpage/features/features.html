@@ -1,1 +1,23 @@
-<p>features works!</p>
+<div class="features-section px-4 py-5">
+
+  <!-- Header -->
+  <div class="text-center mb-5">
+    <span class="section-pill">FEATURES</span>
+    <h2 class="section-title mt-2">Everything you need, nothing you don't</h2>
+    <p class="section-sub">Built for both sides of the garage door</p>
+  </div>
+
+  <!-- Cards grid -->
+  <div class="features-grid">
+    @for (feature of features; track feature.title) {
+      <div class="feature-card">
+        <div class="feature-icon mb-3">
+          <span class="feature-icon-text">{{ feature.icon }}</span>
+        </div>
+        <h6 class="feature-title">{{ feature.title }}</h6>
+        <p class="feature-body">{{ feature.description }}</p>
+      </div>
+    }
+  </div>
+
+</div>

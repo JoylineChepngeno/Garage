@@ -1,0 +1,99 @@
+.hiw-section {
+  background: #fff3e0;
+}
+
+.section-pill {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #fff;
+  color: #cc6600;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.hiw-col-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ff8c00;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hiw-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Each step row */
+.hiw-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+/* The orange number circle */
+.hiw-step-number {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  background: #ff8c00;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+/* The vertical line connecting steps */
+.hiw-step-content {
+  border-left: 2px solid #ffcc80;
+  padding-left: 16px;
+  padding-bottom: 24px;
+}
+
+.hiw-step-content.last-content {
+  border-left: 2px solid transparent;
+  padding-bottom: 0;
+}
+
+.hiw-step-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.hiw-step-body {
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .hiw-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

@@ -1,0 +1,106 @@
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 420px;
+}
+
+/* Left orange side */
+.hero-left {
+  background: #ff8c00;
+}
+
+/* Right white side */
+.hero-right {
+  background: #fff;
+  border-left: 3px solid #ff8c00;
+}
+
+/* Pills */
+.hero-pill {
+  display: inline-block;
+  width: fit-content;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-pill-white {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.hero-pill-orange {
+  background: #fff3e0;
+  color: #cc6600;
+}
+
+/* Typography */
+.hero-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.hero-heading-dark {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #222;
+}
+
+.hero-body {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.hero-body-dark {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Buttons */
+.hero-btn-outline {
+  width: fit-content;
+  font-size: 0.85rem;
+  padding: 9px 20px;
+  border-radius: 8px;
+  border: 1.5px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.hero-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.hero-btn-orange {
+  width: fit-content;
+  font-size: 0.85rem;
+  padding: 9px 20px;
+  border-radius: 8px;
+  border: 1.5px solid #ff8c00;
+  background: transparent;
+  color: #ff8c00;
+}
+
+.hero-btn-orange:hover {
+  background: #fff3e0;
+  color: #ff8c00;
+}
+
+/* Responsive — stack on mobile */
+@media (max-width: 576px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-right {
+    border-left: none;
+    border-top: 3px solid #ff8c00;
+  }
+}

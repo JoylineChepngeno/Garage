@@ -1,0 +1,26 @@
+.footer-wrapper {
+  background: #222;
+}
+
+.footer-logo {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ff8c00;
+  margin: 0;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: #888;
+  margin: 0;
+}
+
+.footer-link {
+  font-size: 0.75rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #ff8c00;
+}

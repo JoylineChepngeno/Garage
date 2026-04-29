@@ -1,1 +1,40 @@
-<p>how-it-works works!</p>
+<div class="hiw-section px-4 py-5">
+
+  <div class="text-center mb-5">
+    <span class="section-pill">HOW IT WORKS</span>
+    <h2 class="section-title mt-2">Up and running in minutes</h2>
+    <p class="section-sub">Simple for car owners, powerful for garages</p>
+  </div>
+
+  <div class="hiw-grid">
+
+    <!-- Car owners column -->
+    <div>
+      <p class="hiw-col-label">For car owners</p>
+      @for (step of carOwnerSteps; track step.title) {
+        <div class="hiw-step" [class.last]="$last">
+          <div class="hiw-step-number">{{ $index + 1 }}</div>
+          <div class="hiw-step-content" [class.last-content]="$last">
+            <p class="hiw-step-title">{{ step.title }}</p>
+            <p class="hiw-step-body">{{ step.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+
+    <!-- Garage owners column -->
+    <div>
+      <p class="hiw-col-label">For garage owners</p>
+      @for (step of garageOwnerSteps; track step.title) {
+        <div class="hiw-step" [class.last]="$last">
+          <div class="hiw-step-number">{{ $index + 1 }}</div>
+          <div class="hiw-step-content" [class.last-content]="$last">
+            <p class="hiw-step-title">{{ step.title }}</p>
+            <p class="hiw-step-body">{{ step.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</div>
