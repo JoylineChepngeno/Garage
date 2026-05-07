@@ -38,6 +38,6 @@ export const routes: Routes = [
     },
     {
         path:'register',
-        loadChildren: () => import('./features/auth/register/user-type/user-type.routes').then(m => m.routes)
+        loadChildren: () => import('./features/auth/register/register-routes/user-type.routes').then(m => m.routes)
     }
 ];
